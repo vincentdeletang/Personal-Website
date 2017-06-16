@@ -1,0 +1,276 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Designer and developer">
+	<meta name="author" content="Vincent Deletang">
+	<link rel="icon" href="favicon.ico" />
+	<title>Vincent Deletang</title>
+	<style>
+		body, html{
+			margin: 0;
+			padding:0;
+			background: black;
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+			background-size: 100px auto;
+		}
+		canvas{
+		    position: absolute;
+		    top:0;
+		    left:0;
+		    height: 100%;
+			width: 100%;
+		}
+		section{
+			position: absolute;;
+			top:50%;
+			left:50%;
+			-webkit-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+			width: 100%;
+			text-align: center;
+		}
+		h1{
+			font-size:0;
+			width: 180px;
+			height: 180px;
+			margin: 0 auto;
+			background-image: url(faces.jpg);
+			background-position: left top;
+			background-repeat: repeat;
+			background-size: auto 180px;
+			border: 6px solid white;
+		}
+		a{
+			display: inline-block;
+			width: 70px;
+			height: 70px;
+			font-size: 0;
+			top:50%;
+			left:50%;
+			margin: 20px 10px;
+		}
+		svg{
+			width: 100%;
+			fill: white;
+		}
+		circle{
+			fill: black;
+			transition: .3s;
+		}
+		a:hover circle{
+			opacity: 0;
+		}
+		@media (max-width:700px){
+			a{
+				width: 50px;
+				height: 50px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<canvas id="scene"></canvas>
+	<section>
+		<h1>Vincent Deletang</h1>
+		<a href="https://www.linkedin.com/in/vincent-deletang-aa63b6102/">
+			Linkedin
+			<svg viewBox="0 0 130 130">
+				<circle cx="65" cy="65" r="60" />
+				<path d="M0,0   l130,0  0,130  -130,0  0,-130" style="stroke: white; fill:none; stroke-width:50" />
+				<path d="M65,0C29.1,0,0,29.1,0,65c0,35.9,29.1,65,65,65c35.9,0,65-29.1,65-65C130,29.1,100.9,0,65,0z M49.217,96.328H35.155V54.053h14.062V96.328z M42.186,48.268L42.186,48.268c-4.806,0-7.832-3.204-7.832-7.298c0-4.183,3.115-7.298,7.921-7.298c4.806,0,7.743,3.115,7.832,7.298C50.106,45.064,47.081,48.268,42.186,48.268z M99.947,96.328H85.885V73.722c0-5.695-2.047-9.612-7.12-9.612c-3.916,0-6.229,2.582-7.21,5.162c-0.355,0.891-0.444,2.137-0.444,3.472v23.585H56.96c0,0,0.178-38.359,0-42.275h14.062v5.962c1.869-2.848,5.162-6.942,12.639-6.942c9.256,0,16.197,6.052,16.197,19.045L99.947,96.328z"/>
+			</svg>
+		</a>
+		<a href="https://twitter.com/vincentdeletang">
+			Twitter
+			<svg viewBox="0 0 130 130">
+				<circle cx="65" cy="65" r="60" />
+				<path d="M0,0   l130,0  0,130  -130,0  0,-130" style="stroke: white; fill:none; stroke-width:50" />
+				<path d="M65,0C29.1,0,0,29.1,0,65c0,35.9,29.1,65,65,65c35.9,0,65-29.1,65-65C130,29.1,100.9,0,65,0z M96.1,53.3c-1.8,1.6-3.8,2.9-3.8,2.9s1.6,6.8-2.9,17C85,83.4,75.4,91.3,65.2,93.1c-10.2,1.7-15.6,0.7-19.8-0.5c-4.2-1.2-8.6-4.3-8.6-4.3S44,88.5,48.5,87c4.5-1.5,7.1-3.7,7.1-3.7s-4.8-0.4-8.6-3.7c-3.8-3.3-4-5.8-4-5.8s2,0.5,3.9,0.5c1.9,0,2.2-0.1,2.2-0.1s-5.4-1.5-8.4-6.4c-3-4.9-2.2-6.8-2.2-6.8s1.1,0.9,3.1,1.6c2,0.6,3.2,0.2,3.2,0.2s-5.1-2.8-5.5-8.6c-0.4-5.8,1.5-8.5,1.5-8.5s3.5,6.3,12.3,9.9c8.8,3.6,14.1,3.3,14.1,3.3s-2.8-10,7.7-14.4c10.4-4.3,14.9,3.3,14.9,3.3s3.3-0.9,4.8-1.7c1.5-0.8,2.5-1.8,2.5-1.8s-0.5,2.1-1.9,3.9c-1.3,1.8-3.2,3.4-3.2,3.4s2-0.5,3.9-1.1c1.8-0.6,2.9-1.1,2.9-1.1S97.9,51.7,96.1,53.3z"/>
+			</svg>
+		</a>
+		<a href="https://github.com/vincentdeletang/">
+			Github
+			<svg viewBox="0 0 130 130">
+				<circle cx="65" cy="65" r="60" />
+				<image xlink:href="github.png" x="0" y="0" height="130px" width="130px"/>
+			</svg>
+		</a>
+	</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js"></script>
+<script>
+	var renderer, scene, camera, light;
+
+	var ww      = window.innerWidth,
+	wh          = window.innerHeight,
+	speed       = 1,
+	mouseX      = 0,
+	colors      = [
+	                0xF44336,0xE91E63,0x9C27B0,0x673AB7,
+	                0x3F51B5,0x2196F3,0x03A9F4,0x00BCD4,
+	                0x009688,0x4CAF50,0x8BC34A,0xCDDC39
+	            ],
+	closest     = {position:{z:0}},
+	farest      = {position:{z:0}};
+	function init(){
+
+	    renderer = new THREE.WebGLRenderer({canvas : document.getElementById('scene'),alpha: true});
+	    renderer.setSize(ww,wh);
+
+	    scene = new THREE.Scene();
+	    scene.fog = new THREE.Fog( 0x000000, 300, 700 );
+
+	    camera = new THREE.PerspectiveCamera(30,ww/wh, 0.1, 10000 );
+	    camera.position.set(0,0,0);
+	    scene.add(camera);
+
+	    window.addEventListener("mousemove", mousemove);
+	    window.addEventListener("touchmove", mousemove);
+	    window.addEventListener("resize", resize);
+
+	    circles = new THREE.Object3D();
+	    scene.add(circles);
+
+	    for(var i=0;i<20;i++){
+	        addCircle();
+	    }
+	    render();
+	}
+
+	var resize = function(){
+	    ww = window.innerWidth;
+	    wh = window.innerHeight;
+	    camera.aspect = ww / wh;
+	    camera.updateProjectionMatrix();
+
+	    renderer.setSize( ww, wh );
+	};
+
+	var mousemove = function(e){
+		if(e.type === "touchmove"){
+			speed = (wh/2-e.touches[0].clientY)/(wh/2)*2.5;
+			mouseX = (ww/2-e.touches[0].clientX)/(ww/2)*25;
+		}
+		else{
+		    speed = (wh/2-e.clientY)/(wh/2)*2.5;
+		    mouseX = (ww/2-e.clientX)/(ww/2)*25;
+		}
+	};
+
+	var removeLine = function(isFarest){
+	    if(isFarest){
+	       for(var i=0,j=circles.children.length;i<j;i++){
+	            if(circles.children[i] === farest){
+	                circles.remove(circles.children[i]);
+	            }
+	        }
+	    }
+	    else{
+	        for(var i=0,j=circles.children.length;i<j;i++){
+	            if(circles.children[i] === closest){
+	                circles.remove(circles.children[i]);
+	            }
+	        }
+	    }
+	};
+
+	var addCircle = function(top){
+	    var row = new THREE.Object3D();
+	    if(top){
+	        row.degreesRotation = (closest.degreesRotation-1) || 0;
+	    }
+	    else{
+	        row.degreesRotation = (farest.degreesRotation+1) || 0;
+	    }
+	    for(var j=0;j<12;j++){
+	        var material = new THREE.MeshBasicMaterial({
+	            color: colors[j]
+	        });
+	        var circleGeometry = new THREE.OctahedronGeometry( 4,0 );
+
+	        var circle = new THREE.Mesh( circleGeometry, material );
+	       	var translate = new THREE.Matrix4().makeTranslation(30,0,0);
+	       	var rotation =  new THREE.Matrix4().makeRotationZ(Math.PI*2/12*j+row.degreesRotation*0.3);
+	     		circle.applyMatrix( new THREE.Matrix4().multiplyMatrices(rotation, translate) );
+	        row.add(circle);
+	    }
+	    if(top){
+	        row.position.z = (closest.position.z/35+1)*35;
+	    }
+	    else{
+	        row.position.z = (farest.position.z/35-1)*35;
+	    }
+	    circles.add(row);
+	    closest = circles.children[0];
+	    farest = circles.children[0];
+	    for(var i=0,j=circles.children.length;i<j;i++){
+	        if(circles.children[i].position.z>closest.position.z){
+	            closest = circles.children[i];
+	        }
+	        if(circles.children[i].position.z<farest.position.z){
+	            farest = circles.children[i];
+	        }
+	    }
+	};
+
+
+	var render = function () {
+	    requestAnimationFrame(render);
+
+	    camera.position.z -= speed;
+	   	camera.position.x += (mouseX-camera.position.x)*.03;
+			 //camera.position.x += (camera.position.x)*.05;
+	    if(camera.position.z<(closest.position.z-35) && speed>0){
+	        removeLine(false);
+	        addCircle();
+	    }
+	    else if(camera.position.z>(farest.position.z+665) && speed<0){
+	        removeLine(true);
+	        addCircle(true);
+	    }
+
+
+	    renderer.render(scene, camera);
+	};
+
+	init();
+
+	//Change my little head
+/*
+	var face = document.querySelector("h1");
+	function updateHead(e){
+		if(e.type === "touchmove"){
+			var mouseX = Math.floor((ww-(e.touches[0].clientX))/(ww)*10);
+		}
+		else{
+			var mouseX = Math.floor((ww-e.clientX)/(ww)*10);
+		}
+		face.style.backgroundPosition = mouseX*180+"px center";
+	};
+	window.addEventListener("mousemove", updateHead);
+	window.addEventListener("touchmove", updateHead);
+
+	var secretCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+	var lastKey = 0;
+	window.addEventListener("keydown", function (e) {
+		if(e.keyCode===secretCode[lastKey]){
+			lastKey++;
+		}
+		else{
+			lastKey = 0;
+		}
+		if(lastKey===10){
+			lastKey = 0;
+			document.body.style.backgroundImage = "url(konami.gif)";
+		}
+	});
+	*/
+</script>
+</body>
+</html>
